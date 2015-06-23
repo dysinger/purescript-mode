@@ -50,7 +50,7 @@ versions.
     ```el
     (add-to-list 'load-path "~/lib/emacs/purescript-mode/")
     (require 'purescript-mode-autoloads)
-    (add-to-list 'Info-default-directory-list "~/lib/emacs/purescript-mode/")
+    (add-to-list 'Info-additional-directory-list "path-to-purescript-mode/")
     ```
 
 -   After updating your purescript-mode working directory, you need to
