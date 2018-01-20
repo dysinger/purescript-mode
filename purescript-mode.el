@@ -67,16 +67,6 @@ When MESSAGE is non-nil, display a message with the version."
         (insert _version)
       (message "%s" _version))))
 
-;;;###autoload
-(defun purescript-mode-view-news ()
-  "Display information on recent changes to purescript-mode."
-  (interactive)
-  (with-current-buffer (find-file-read-only (expand-file-name "NEWS" purescript-mode-pkg-base-dir))
-    (goto-char (point-min))
-    (hide-sublevels 1)
-    (outline-next-visible-heading 1)
-    (show-subtree)))
-
 (defgroup purescript nil
   "Major mode for editing PureScript programs."
   :link '(custom-manual "(purescript-mode)")
